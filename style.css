@@ -50,6 +50,14 @@ header h1 {
     padding: 20px 0 20px;
 }
 
+.kad-gdje-img {
+    max-width: 90%;  /* Ensures the image is responsive */
+    height: auto;     /* Keeps the aspect ratio */
+    display: block;   /* Centers the image */
+    margin: 20px auto; /* Adds spacing and centers horizontally */
+    border-radius: 10px; /* (Optional) Adds soft rounded corners */
+}
+
 /* RSVP Form */
 #rsvp {
     padding: 0;

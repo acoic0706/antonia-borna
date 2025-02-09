@@ -2,13 +2,27 @@
 body {
     font-family: 'Great Vibes', sans-serif;
     background-image: url("background.png");
-    background-size: 50%; /* Or your desired dimensions */
+    background-size: cover; /* Or your desired dimensions */
     background-repeat: no-repeat; /* Usually needed for fixed size */
     background-position: center;
     color: #465742; /* Dark blue text */
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 768px) { /* Example breakpoint for tablets/smaller screens */
+    body {
+        background-size: cover; /* Or contain - you might want to switch */
+        background-position: center; /* Adjust if needed */
+    }
+}
+
+@media (max-width: 480px) { /* Example breakpoint for phones */
+    body {
+        background-size: cover; /* Or contain */
+        background-position: top center; /* Example - shift for portrait mode */
+    }
 }
 
 /* Header */

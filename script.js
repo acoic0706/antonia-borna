@@ -35,26 +35,33 @@ document.addEventListener("DOMContentLoaded", function () {
             body: JSON.stringify(formData)
         })
         .then(() => {
-            // Show confirmation message
-            let message = document.createElement("p");
-            message.classList.add("confirmation");
-            message.textContent = "Hvala! Vaša prijava je zaprimljena. 😊";
-            
-            // Remove existing messages before adding a new one
+            // Remove old confirmation message if exists
             let existingMessage = document.querySelector(".confirmation");
             if (existingMessage) {
                 existingMessage.remove();
             }
 
-            // Append the new message and reset the form
-            document.getElementById("rsvp").appendChild(message);
-            document.getElementById("rsvpForm").reset(); // Reset form after submission
+            // Create new confirmation message
+            let message = document.createElement("p");
+            message.classList.add("confirmation");
+            message.textContent = "✅ Hvala! Vaša prijava je zaprimljena. 😊";
+            message.style.color = "#2E8B57"; // Soft green color
+            message.style.fontSize = "1.2em";
+            message.style.marginTop = "15px";
 
-            // Display message and fade it out after a few seconds
+            // Append message to form
+            document.getElementById("rsvp").appendChild(message);
+
+            // Reset form after submission
+            document.getElementById("rsvpForm").reset();
+
+            // Keep message visible for longer (5 seconds)
             setTimeout(() => {
-                message.style.opacity = "0";
-            }, 3000);
+                message.remove();
+            }, 5000);
         })
-        .catch(error => console.error("Greška prilikom slanja podataka!", error));
+        .catch(error => {
+            console.error("Greška prilikom slanja podataka!", error);
+        });
     });
 });

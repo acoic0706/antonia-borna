@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Great Vibes', sans-serif;
-    background: #fefcf6; /* Lighter background */
+    background-image: url("background.png");
     color: #465742; /* Dark blue text */
     text-align: center;
     margin: 0;

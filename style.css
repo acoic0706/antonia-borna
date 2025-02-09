@@ -2,9 +2,10 @@
 body {
     font-family: 'Great Vibes', sans-serif;
     background-image: url("background.png");
-    background-size: cover; /* Or your desired dimensions */
+    background-size: contain; /* Or your desired dimensions */
     background-repeat: no-repeat; /* Usually needed for fixed size */
-    background-position: center;
+    background-position: center top;
+    background-attachment: fixed;
     color: #465742; /* Dark blue text */
     text-align: center;
     margin: 0px;
@@ -13,29 +14,29 @@ body {
 
 @media (max-width: 768px) { /* Example breakpoint for tablets/smaller screens */
     body {
-        background-size: cover; /* Or contain - you might want to switch */
-        background-position: center; /* Adjust if needed */
+        background-size: contain; /* Or contain - you might want to switch */
+        background-position: center top; /* Adjust if needed */
     }
 }
 
 @media (max-width: 480px) { /* Example breakpoint for phones */
     body {
-        background-size: cover; /* Or contain */
-        background-position: top center; /* Example - shift for portrait mode */
+        background-size: contain; /* Or contain */
+        background-position: center top; /* Example - shift for portrait mode */
     }
 }
 
 /* Header */
 header h1 {
     font-family: 'Merienda', cursive;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #465742; /* Dark blue */
     margin-top: 50px;
 }
 
 /* Invitation Info */
 #info {
-    font-family: 'Great Vibes', serif;
+    font-family: 'Great Vibes', cursive;
     font-size: 0.8em;
     line-height: 1.5;
     max-width: 600px;
@@ -56,9 +57,10 @@ header h1 {
 
 #rsvpForm {
     background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    width: 80%;
-    margin: 10px;
+    padding: 15px;
+    width: 90%;
+    max-width: 500px
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     text-align: left; /* Aligns text properly */
@@ -76,7 +78,7 @@ header h1 {
 #rsvpForm input[type="text"], 
 #rsvpForm input[type="number"],
 #rsvpForm textarea {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     border: 2px solid #0A3D62;
     border-radius: 8px;
@@ -128,6 +130,15 @@ header h1 {
 
 #rsvpForm input[type="submit"]:hover {
     background-color: #062F4F;
+}
+
+/* Confirmation Message */
+.confirmation {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #0A3D62;
+    font-weight: bold;
 }
 
 /* Footer */

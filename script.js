@@ -3,15 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent the default form submission
 
         // Get form values
-        let ime = document.getElementById("ime").value;
-        let prezime = document.getElementById("prezime").value;
+        let ime i prezime = document.getElementById("ime_prezime").value;
         let dolazak = document.getElementById("dolazak").value;
         let brojOsoba = document.getElementById("broj_osoba").value;
 
         // Prepare data object
         let formData = {
-            ime: ime,
-            prezime: prezime,
+            ime i prezime: ime i prezime,
             dolazak: dolazak,
             broj_osoba: brojOsoba
         };

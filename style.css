@@ -7,8 +7,8 @@ body {
     background-position: center;
     color: #465742; /* Dark blue text */
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
 }
 
 @media (max-width: 768px) { /* Example breakpoint for tablets/smaller screens */
@@ -28,7 +28,7 @@ body {
 /* Header */
 header h1 {
     font-family: 'Merienda', cursive;
-    font-size: 3em;
+    font-size: 2em;
     color: #465742; /* Dark blue */
     margin-top: 50px;
 }
@@ -36,16 +36,16 @@ header h1 {
 /* Invitation Info */
 #info {
     font-family: 'Great Vibes', serif;
-    font-size: 1.5em;
-    line-height: 1.6;
+    font-size: 1em;
+    line-height: 1.5;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20 auto;
 }
 
 /* Kad i gdje */
 #kad-gdje {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 20px 0 20px;
 }
 
@@ -56,9 +56,9 @@ header h1 {
 
 #rsvpForm {
     background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    width: 50%;
-    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    margin: 10 auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     text-align: left; /* Aligns text properly */
@@ -66,7 +66,7 @@ header h1 {
 
 #rsvpForm label {
     color: #465742;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     display: block; /* Ensures labels are above fields */
     margin-bottom: 5px;

@@ -1,17 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("rsvpForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); // Prevent default form submission
 
         // Get form values
-        let ime i prezime = document.getElementById("ime_prezime").value;
-        let dolazak = document.getElementById("dolazak").value;
+        let imePrezime = document.getElementById("ime_prezime").value;
+        let dolazak = document.querySelector('input[name="dolazak"]:checked');
         let brojOsoba = document.getElementById("broj_osoba").value;
+        let smjestaj = document.querySelector('input[name="smjestaj"]:checked');
+
+        // Ensure radio buttons are selected
+        if (!dolazak || !smjestaj) {
+            alert("Molimo vas da odaberete dolazak i smještaj.");
+            return;
+        }
 
         // Prepare data object
         let formData = {
-            ime i prezime: ime i prezime,
-            dolazak: dolazak,
-            broj_osoba: brojOsoba
+            ime_prezime: imePrezime,
+            dolazak: dolazak.value,
+            broj_osoba: brojOsoba,
+            smjestaj: smjestaj.value
         };
 
         // Google Apps Script Web App URL (replace with your actual deployed URL)

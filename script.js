@@ -29,10 +29,26 @@ document.addEventListener("DOMContentLoaded", function () {
             body: JSON.stringify(formData)
         })
         .then(() => {
-            alert("Podaci su poslani! Hvala na potvrdi.");
+            // Show confirmation message
+            let message = document.createElement("p");
+            message.classList.add("confirmation");
+            message.textContent = "Hvala! Vaša prijava je zaprimljena. 😊";
+            
+            // Remove existing messages before adding a new one
+            let existingMessage = document.querySelector(".confirmation");
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+
+            // Append the new message and reset the form
+            document.getElementById("rsvp").appendChild(message);
             document.getElementById("rsvpForm").reset(); // Reset form after submission
+
+            // Display message and fade it out after a few seconds
+            setTimeout(() => {
+                message.style.opacity = "0";
+            }, 3000);
         })
         .catch(error => console.error("Greška prilikom slanja podataka!", error));
     });
 });
-

@@ -2,25 +2,25 @@
 body {
     font-family: 'Great Vibes', sans-serif;
     background-image: url("background.png");
-    background-size: contain; /* Or your desired dimensions */
+    background-size: cover; /* Or your desired dimensions */
     background-repeat: no-repeat; /* Usually needed for fixed size */
     background-position: center;
     color: #465742; /* Dark blue text */
     text-align: center;
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
 }
 
 @media (max-width: 768px) { /* Example breakpoint for tablets/smaller screens */
     body {
-        background-size: contain; /* Or contain - you might want to switch */
+        background-size: cover; /* Or contain - you might want to switch */
         background-position: center; /* Adjust if needed */
     }
 }
 
 @media (max-width: 480px) { /* Example breakpoint for phones */
     body {
-        background-size: contain; /* Or contain */
+        background-size: cover; /* Or contain */
         background-position: top center; /* Example - shift for portrait mode */
     }
 }
@@ -28,7 +28,7 @@ body {
 /* Header */
 header h1 {
     font-family: 'Merienda', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #465742; /* Dark blue */
     margin-top: 50px;
 }
@@ -36,10 +36,10 @@ header h1 {
 /* Invitation Info */
 #info {
     font-family: 'Great Vibes', serif;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 1.5;
     max-width: 600px;
-    margin: 20 auto;
+    margin: 20px;
 }
 
 /* Kad i gdje */
@@ -57,8 +57,8 @@ header h1 {
 #rsvpForm {
     background: rgba(255, 255, 255, 0.9);
     padding: 10px;
-    width: 90%;
-    margin: 10 auto;
+    width: 80%;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     text-align: left; /* Aligns text properly */

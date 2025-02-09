@@ -2,7 +2,7 @@
 body {
     font-family: 'Great Vibes', sans-serif;
     background-image: url("background.png");
-    background-size: cover; /* Or your desired dimensions */
+    background-size: 50%; /* Or your desired dimensions */
     background-repeat: no-repeat; /* Usually needed for fixed size */
     background-position: center;
     color: #465742; /* Dark blue text */

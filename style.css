@@ -44,7 +44,7 @@ header h1 {
 }
 
 .kad-gdje-img {
-    max-width: 80%;  /* Adjust width to fit within content */
+    max-width: 60%;  /* Adjust width to fit within content */
     height: auto;  /* Maintain aspect ratio */
     display: block;  /* Ensure it's centered */
     margin: 20px auto;  /* Center the image with some spacing */

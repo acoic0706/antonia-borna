@@ -11,6 +11,13 @@ body {
     padding: 0;
 }
 
+/* Set a standard width for all sections */
+.section-container {
+    width: 50%;  /* Same width as the form */
+    max-width: 600px;  /* Prevents sections from being too wide on larger screens */
+    margin: 0 auto;  /* Centers the sections */
+}
+
 /* Header */
 header h1 {
     font-family: 'Merienda', cursive;
@@ -39,10 +46,9 @@ header h1 {
 /* Kad i gdje */
 
 .kad-gdje-img {
-    width: 50%;  /* Adjust width to fit within content */
+    width: 100%;  /* Adjust width to fit within content */
     height: auto;  /* Maintain aspect ratio */
-    display: block;  /* Ensure it's centered */
-    margin: 10px auto;  /* Center the image with some spacing */
+    display: block;  /* Ensure it's centered, margin: 10px auto; Center the image with some spacing */
     border-radius: 10px;  /* Optional: rounded corners */
 }
 

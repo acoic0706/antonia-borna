@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
+     // Get audio element
+    const backgroundMusic = document.getElementById("backgroundMusic");
+    const toggleMusicButton = document.getElementById("toggleMusic");
+
+    // Default state is music off
+    let isMusicPlaying = false;
+
+    // Toggle music play/pause when button is clicked
+    toggleMusicButton.addEventListener("click", function () {
+        if (isMusicPlaying) {
+            backgroundMusic.pause(); // Pause music
+            toggleMusicButton.textContent = "Turn Music On"; // Change button text
+        } else {
+            backgroundMusic.play(); // Play music
+            toggleMusicButton.textContent = "Turn Music Off"; // Change button text
+        }
+        isMusicPlaying = !isMusicPlaying; // Toggle music state
+    });
+    
     document.getElementById("rsvpForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
 

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         // Google Apps Script Web App URL (replace with your actual deployed URL)
-        let scriptURL = "https://script.google.com/macros/s/AKfycbxfHeHiZqjty8Zrut3mt24ZMwzF-QKbZBhQ3BPwkPKKZZOmP3hENKh66GDcJu3_GNZlSw/exec";
+        let scriptURL = "https://script.google.com/macros/s/AKfycbyRjwfZXXZEqu39PeC5rKFUUsui88K2P7hYPMp4C-IZiKLKOdYj-EGpNXyo17AEnS5c/exec";
 
         // Send data to Google Apps Script
         fetch(scriptURL, {

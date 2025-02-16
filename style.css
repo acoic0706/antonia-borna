@@ -43,6 +43,14 @@ header h1 {
     padding: 20px 0 20px;
 }
 
+.kad-gdje-img {
+    max-width: 80%;  /* Adjust width to fit within content */
+    height: auto;  /* Maintain aspect ratio */
+    display: block;  /* Ensure it's centered */
+    margin: 20px auto;  /* Center the image with some spacing */
+    border-radius: 10px;  /* Optional: rounded corners */
+}
+
 /* RSVP Form */
 #rsvp {
     padding: 0;
@@ -132,14 +140,4 @@ header h1 {
     cursor: pointer;
     transition: 0.3s;
     width: 100%;
-}
-
-#rsvpForm input[type="submit"]:hover {
-    background-color: #062F4F;
-}
-
-/* Footer */
-footer {
-    margin-top: 40px;
-    font-size: 1em;
 }

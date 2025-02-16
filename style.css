@@ -11,13 +11,6 @@ body {
     padding: 0;
 }
 
-/* Set a standard width for all sections */
-.section-container {
-    width: 80%;  /* Same width as the form */
-    max-width: 600px;  /* Prevents sections from being too wide on larger screens */
-    margin: 0 auto;  /* Centers the sections */
-}
-
 /* Header */
 header h1 {
     font-family: 'Merienda', cursive;
@@ -29,7 +22,7 @@ header h1 {
 .header-image {
     display: block;       /* Ensures it's on a new line */
     margin: 20px auto;    /* Centers the image */
-    max-width: 100%;       /* Makes sure it doesn’t overflow */
+    max-width: 30%;       /* Makes sure it doesn’t overflow */
     height: auto;         /* Keeps aspect ratio */
     border-radius: 10px;  /* Optional: adds rounded corners */
 }
@@ -44,11 +37,17 @@ header h1 {
 }
 
 /* Kad i gdje */
+#kad-gdje {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    padding: 20px 0 20px;
+}
 
 .kad-gdje-img {
-    width: 110%;  /* Adjust width to fit within content */
+    max-width: 80%;  /* Adjust width to fit within content */
     height: auto;  /* Maintain aspect ratio */
-    display: block;  /* Ensure it's centered, margin: 10px auto; Center the image with some spacing */
+    display: block;  /* Ensure it's centered */
+    margin: 20px auto;  /* Center the image with some spacing */
     border-radius: 10px;  /* Optional: rounded corners */
 }
 
@@ -60,7 +59,7 @@ header h1 {
 #rsvpForm {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    width: 110%;
+    width: 50%;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);

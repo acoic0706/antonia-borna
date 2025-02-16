@@ -15,6 +15,31 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        // Show immediate confirmation message
+        let existingMessage = document.querySelector(".confirmation");
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+
+        let message = document.createElement("p");
+        message.classList.add("confirmation");
+        message.textContent = "Hvala! Vaša prijava je zaprimljena.";
+        message.style.color = "#2E8B57"; // Soft green color
+        message.style.fontSize = "1.2em";
+        message.style.marginTop = "15px";
+        message.style.textAlign = "center";
+
+        // Append the confirmation message
+        document.getElementById("rsvp").appendChild(message);
+
+        // Reset form after submission
+        document.getElementById("rsvpForm").reset();
+
+        // Keep the confirmation message visible for 5 seconds
+        setTimeout(() => {
+            message.remove();
+        }, 5000);
+
         // Prepare data object
         let formData = {
             ime_prezime: imePrezime,
@@ -35,37 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(formData)
-        })
+
         .then(() => {
-            // Remove old confirmation message if exists
-            let existingMessage = document.querySelector(".confirmation");
-            if (existingMessage) {
-                existingMessage.remove();
-            }
-
-            // Create new confirmation message
-            let message = document.createElement("p");
-            message.classList.add("confirmation");
-            message.textContent = "Hvala! Vaša prijava je zaprimljena.";
-            message.style.color = "#2E8B57"; // Soft green color
-            message.style.fontSize = "1.2em";
-            message.style.marginTop = "15px";
-            message.style.textAlign = "center";
-
-            // Append message to form
-            document.getElementById("rsvp").appendChild(message);
-
-            // Reset form after submission
-            document.getElementById("rsvpForm").reset();
-
-            // Keep message visible for 5 seconds
-            setTimeout(() => {
-                message.remove();
-            }, 5000);
+            // Optional: You can add success logic here if needed (but you're already showing confirmation)
+            console.log("Form submitted successfully.");
         })
         .catch(error => {
             console.error("Greška prilikom slanja podataka!", error);
             alert("Došlo je do greške prilikom slanja podataka. Pokušajte ponovo.");
         });
     });
-});

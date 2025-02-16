@@ -37,17 +37,12 @@ header h1 {
 }
 
 /* Kad i gdje */
-#kad-gdje {
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.5em;
-    padding: 20px 0 20px;
-}
 
 .kad-gdje-img {
-    max-width: 40%;  /* Adjust width to fit within content */
+    max-width: 50%;  /* Adjust width to fit within content */
     height: auto;  /* Maintain aspect ratio */
     display: block;  /* Ensure it's centered */
-    margin: 20px auto;  /* Center the image with some spacing */
+    margin: 10px auto;  /* Center the image with some spacing */
     border-radius: 10px;  /* Optional: rounded corners */
 }
 

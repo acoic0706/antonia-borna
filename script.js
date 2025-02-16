@@ -3,14 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent default form submission
 
         // Get form values
-        let imePrezime = document.getElementById("ime_prezime").value;
+        let imePrezime = document.getElementById("ime_prezime").value.trim();
         let dolazak = document.querySelector('input[name="dolazak"]:checked');
-        let brojOsoba = document.getElementById("broj_osoba").value;
+        let brojOsoba = document.getElementById("broj_osoba").value.trim();
         let smjestaj = document.querySelector('input[name="smjestaj"]:checked');
+        let dodatneNapomene = document.getElementById("dodatne_napomene").value.trim();
 
-        // Ensure radio buttons are selected
-        if (!dolazak || !smjestaj) {
-            alert("Molimo vas da odaberete dolazak i smještaj.");
+        // Validation check
+        if (imePrezime === "" || !dolazak || brojOsoba === "" || !smjestaj) {
+            alert("Molimo vas da popunite sva obavezna polja (ime, dolazak, broj osoba i smještaj).");
             return;
         }
 
@@ -19,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
             ime_prezime: imePrezime,
             dolazak: dolazak.value,
             broj_osoba: brojOsoba,
-            smjestaj: smjestaj.value
+            smjestaj: smjestaj.value,
+            dodatne_napomene: dodatneNapomene // Added field
         };
 
         // Google Apps Script Web App URL (replace with your actual deployed URL)
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             message.style.color = "#2E8B57"; // Soft green color
             message.style.fontSize = "1.2em";
             message.style.marginTop = "15px";
+            message.style.textAlign = "center";
 
             // Append message to form
             document.getElementById("rsvp").appendChild(message);
@@ -55,13 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Reset form after submission
             document.getElementById("rsvpForm").reset();
 
-            // Keep message visible for longer (5 seconds)
+            // Keep message visible for 5 seconds
             setTimeout(() => {
                 message.remove();
             }, 5000);
         })
         .catch(error => {
             console.error("Greška prilikom slanja podataka!", error);
+            alert("Došlo je do greške prilikom slanja podataka. Pokušajte ponovo.");
         });
     });
 });

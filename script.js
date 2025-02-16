@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create new confirmation message
             let message = document.createElement("p");
             message.classList.add("confirmation");
-            message.textContent = "✅ Hvala! Vaša prijava je zaprimljena. 😊";
+            message.textContent = "Hvala! Vaša prijava je zaprimljena.";
             message.style.color = "#2E8B57"; // Soft green color
             message.style.fontSize = "1.2em";
             message.style.marginTop = "15px";

@@ -10,6 +10,48 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Example of how to add a fixed image to each corner */
+
+/* Fix lemon image at top-left corner */
+#lemonTopLeft {
+    position: fixed;
+    top: 10px;       /* Adjust for spacing from the top */
+    left: 10px;      /* Adjust for spacing from the left */
+    width: 80px;     /* Adjust the size */
+    height: auto;
+    z-index: 9999;   /* Ensure it's on top of other content */
+}
+
+/* Fix lemon image at top-right corner */
+#lemonTopRight {
+    position: fixed;
+    top: 10px;
+    right: 10px;     /* Adjust for spacing from the right */
+    width: 80px;
+    height: auto;
+    z-index: 9999;
+}
+
+/* Fix lemon image at bottom-left corner */
+#lemonBottomLeft {
+    position: fixed;
+    bottom: 10px;    /* Adjust for spacing from the bottom */
+    left: 10px;
+    width: 80px;
+    height: auto;
+    z-index: 9999;
+}
+
+/* Fix lemon image at bottom-right corner */
+#lemonBottomRight {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: auto;
+    z-index: 9999;
+}
+
 
 /* Header */
 header h1 {

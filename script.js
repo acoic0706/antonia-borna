@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(formData)
-
-        .then(() => {
+        })
+        .then(response => {
             // Optional: You can add success logic here if needed (but you're already showing confirmation)
             console.log("Form submitted successfully.");
         })
@@ -70,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Došlo je do greške prilikom slanja podataka. Pokušajte ponovo.");
         });
     });
+});

@@ -39,7 +39,7 @@ header h1 {
 /* Kad i gdje */
 
 .kad-gdje-img {
-    max-width: 50%;  /* Adjust width to fit within content */
+    width: 50%;  /* Adjust width to fit within content */
     height: auto;  /* Maintain aspect ratio */
     display: block;  /* Ensure it's centered */
     margin: 10px auto;  /* Center the image with some spacing */

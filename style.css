@@ -22,7 +22,7 @@ header h1 {
 .header-image {
     display: block;       /* Ensures it's on a new line */
     margin: 20px auto;    /* Centers the image */
-    max-width: 30%;       /* Makes sure it doesn’t overflow */
+    max-width: 50%;       /* Makes sure it doesn’t overflow */
     height: auto;         /* Keeps aspect ratio */
     border-radius: 10px;  /* Optional: adds rounded corners */
 }
@@ -30,7 +30,7 @@ header h1 {
 /* Invitation Info */
 #info {
     font-family: 'Great Vibes', serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
@@ -59,7 +59,7 @@ header h1 {
 #rsvpForm {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);

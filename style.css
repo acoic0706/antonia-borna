@@ -60,7 +60,7 @@ body {
     margin-top: 50px;
 }
 
-.header-image {
+.grad-img {
     display: block;       /* Ensures it's on a new line */
     margin: 20px auto;    /* Centers the image */
     max-width: 50%;       /* Makes sure it doesn’t overflow */

@@ -13,21 +13,19 @@ body {
 /* Example of how to add a fixed image to each corner */
 
 /* Fix lemon image at top-left corner */
-#lemonTopLeft {
-    position: fixed;
-    top: 10px;       /* Adjust for spacing from the top */
-    left: 10px;      /* Adjust for spacing from the left */
-    width: 80px;     /* Adjust the size */
+#lemonTopLeft { /*position: fixed;*/
+    top: 0px;       /* Adjust for spacing from the top */
+    left: 0px;      /* Adjust for spacing from the left */
+    width: 60px;     /* Adjust the size */
     height: auto;
     z-index: 9999;   /* Ensure it's on top of other content */
 }
 
 /* Fix lemon image at top-right corner */
-#lemonTopRight {
-    position: fixed;
-    top: 10px;
-    right: 10px;     /* Adjust for spacing from the right */
-    width: 80px;
+#lemonTopRight { /*position: fixed;*/
+    top: 0px;
+    right: 0px;     /* Adjust for spacing from the right */
+    width: 60px;
     height: auto;
     z-index: 9999;
 }
@@ -35,9 +33,9 @@ body {
 /* Fix lemon image at bottom-left corner */
 #lemonBottomLeft {
     position: fixed;
-    bottom: 10px;    /* Adjust for spacing from the bottom */
-    left: 10px;
-    width: 80px;
+    bottom: 0px;    /* Adjust for spacing from the bottom */
+    left: 0px;
+    width: 60px;
     height: auto;
     z-index: 9999;
 }
@@ -45,9 +43,9 @@ body {
 /* Fix lemon image at bottom-right corner */
 #lemonBottomRight {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 80px;
+    bottom: 0px;
+    right: 0px;
+    width: 60px;
     height: auto;
     z-index: 9999;
 }
@@ -55,7 +53,7 @@ body {
 
 /* Header */
 header h1 {
-    font-family: 'Merienda', cursive;
+    font-family: 'Madelyn', cursive;
     font-size: 3em;
     color: #465742; /* Dark blue */
     margin-top: 50px;

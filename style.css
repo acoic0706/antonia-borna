@@ -182,13 +182,13 @@ body {
     transition: 0.3s;
     width: 100%;
 }
-/* Style for the music toggle button */
+/* Style for the music toggle button
 #toggleMusic {
     position: fixed;
-    bottom: 20px;   /* Position at the bottom of the screen */
-    left: 20px;     /* Position it to the left */
+    bottom: 20px;   Position at the bottom of the screen
+    left: 20px;     Position it to the left
     padding: 10px 20px;
-    background-color: #2E8B57; /* Green color for button */
+    background-color: #2E8B57; Green color for button
     color: white;
     border: none;
     font-size: 16px;
@@ -197,5 +197,5 @@ body {
 }
 
 #toggleMusic:hover {
-    background-color: #3CB371; /* Darker green on hover */
-}
+    background-color: #3CB371; Darker green on hover 
+}*/

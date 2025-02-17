@@ -53,7 +53,7 @@ body {
 }
 
 /* Header */
-header h1 {
+#naslov {
     font-family: 'Madelyn', serif;
     font-size: 3em;
     color: #465742; /* Dark blue */

@@ -57,9 +57,12 @@ body {
 /* Header */
 #naslov {
     font-family: 'Madelyn', cursive;
-    font-size: 3.5em;
+    font-size: 4.5em;
     color: #465742; /* Dark blue */
-    margin-top: 50px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    max-width: 90%;
 }
 
 .grad-img {/* display: block;Ensures it's on a new line */

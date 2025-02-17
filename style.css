@@ -50,10 +50,9 @@ body {
     z-index: 9999;
 }
 
-
 /* Header */
 header h1 {
-    font-family: 'Madelyn', cursive;
+    font-family: 'Madelyn', serif;
     font-size: 3em;
     color: #465742; /* Dark blue */
     margin-top: 50px;

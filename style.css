@@ -1,69 +1,111 @@
 /* General Styles */
 body {
-    background-image: url("background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: #465742;
+    background-image: url("background.png"); /* Path to your image */
+    background-size: cover; /* Makes the image cover the whole page */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+    color: #465742; /* Dark green text */
     text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Adjust Olive Images to be in Background */
+/* Position lemon images at corners but behind other content */
 #lemonTopLeft, #lemonTopRight, #lemonBottomLeft, #lemonBottomRight {
     position: fixed;
-    width: 60px;
+    width: 50px; /* Smaller for mobile */
     height: auto;
-    z-index: -1; /* Send to background */
-    opacity: 0.7; /* Slight transparency for subtle effect */
+    z-index: -1; /* Send to back */
+    opacity: 0.7; /* Slightly faded */
 }
+
 #lemonTopLeft { top: 10px; left: 10px; }
 #lemonTopRight { top: 10px; right: 10px; }
 #lemonBottomLeft { bottom: 10px; left: 10px; }
 #lemonBottomRight { bottom: 10px; right: 10px; }
 
-/* Antonia & Borna Header */
+/* Header */
 header p {
-    font-family: 'Madelyn', serif;
-    font-size: 4em; /* Larger font */
-    font-weight: bold;
-    color: #2E8B57; /* Soft green */
+    font-family: 'Madelyn', cursive;
+    font-size: 3.5em;
+    color: #465742;
     margin-top: 20px;
 }
 
-/* Info Text (Dragi naši...) */
+.header-image {
+    max-width: 70%; /* Adjust for mobile */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Invitation Info */
 #info {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.8em; /* Make it more elegant */
+    font-size: 1.8em;
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
-    color: #4B3F2F; /* Softer brownish tone */
+    padding: 10px;
 }
 
-/* RSVP Form - Decrease Font Size */
+/* RSVP Form */
 #rsvpForm {
-    font-size: 0.9em;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    width: 90%; /* Adjust for better fit on mobile */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-size: 0.9em; /* Decrease form font size */
 }
+
+/* Labels */
 #rsvpForm label {
     font-size: 0.9em;
 }
-#rsvpForm input, #rsvpForm textarea {
+
+/* Input Fields */
+#rsvpForm input[type="text"], 
+#rsvpForm input[type="number"],
+#rsvpForm textarea {
+    width: 100%;
+    padding: 8px;
     font-size: 0.9em;
 }
 
-/* Music Button - Change to Icon Only */
+/* Radio Button Styling */
+.option-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.option-group label {
+    padding: 8px;
+    font-size: 0.9em;
+}
+
+/* Submit Button */
+#rsvpForm input[type="submit"] {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Music Toggle Button */
 #toggleMusic {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 50px;
-    height: 50px;
-    background: url('speaker_icon.png') no-repeat center center;
-    background-size: contain;
+    background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+}
+
+#toggleMusic img {
+    width: 50px;
+    height: auto;
 }

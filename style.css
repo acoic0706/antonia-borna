@@ -1,199 +1,69 @@
 /* General Styles */
 body {
-    background-image: url("background.png"); /* Path to your image */
-    background-size: cover; /* Makes the image cover the whole page */
-    background-repeat: no-repeat; /* Prevents repeating */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps background fixed while scrolling */
-    color: #465742; /* Dark green text */
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #465742;
     text-align: center;
     margin: 0;
     padding: 0;
 }
-/* Example of how to add a fixed image to each corner */
 
-/* Fix lemon image at top-left corner */
-#lemonTopLeft { /*position: fixed;*/
-    top: 0px;       /* Adjust for spacing from the top */
-    left: 0px;      /* Adjust for spacing from the left */
-    width: 60px;     /* Adjust the size */
-    height: auto;
-    z-index: 9999;   /* Ensure it's on top of other content */
-}
-
-/* Fix lemon image at top-right corner */
-#lemonTopRight { /*position: fixed;*/
-    top: 0px;
-    right: 0px;     /* Adjust for spacing from the right */
-    width: 60px;
-    height: auto;
-    z-index: 9999;
-}
-
-/* Fix lemon image at bottom-left corner */
-#lemonBottomLeft {
+/* Adjust Olive Images to be in Background */
+#lemonTopLeft, #lemonTopRight, #lemonBottomLeft, #lemonBottomRight {
     position: fixed;
-    bottom: 0px;    /* Adjust for spacing from the bottom */
-    left: 0px;
     width: 60px;
     height: auto;
-    z-index: 9999;
+    z-index: -1; /* Send to background */
+    opacity: 0.7; /* Slight transparency for subtle effect */
 }
+#lemonTopLeft { top: 10px; left: 10px; }
+#lemonTopRight { top: 10px; right: 10px; }
+#lemonBottomLeft { bottom: 10px; left: 10px; }
+#lemonBottomRight { bottom: 10px; right: 10px; }
 
-/* Fix lemon image at bottom-right corner */
-#lemonBottomRight {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 60px;
-    height: auto;
-    z-index: 9999;
-}
-
-/* Header */
-header h1 {
+/* Antonia & Borna Header */
+header p {
     font-family: 'Madelyn', serif;
-    font-size: 3em;
-    color: #465742; /* Dark blue */
-    margin-top: 50px;
+    font-size: 4em; /* Larger font */
+    font-weight: bold;
+    color: #2E8B57; /* Soft green */
+    margin-top: 20px;
 }
 
-.header-image {
-    display: block;       /* Ensures it's on a new line */
-    margin: 20px auto;    /* Centers the image */
-    max-width: 50%;       /* Makes sure it doesn’t overflow */
-    height: auto;         /* Keeps aspect ratio */
-    border-radius: 10px;  /* Optional: adds rounded corners */
-}
-
-/* Invitation Info */
+/* Info Text (Dragi naši...) */
 #info {
-    font-family: 'Great Vibes', serif;
-    font-size: 1.4em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em; /* Make it more elegant */
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
+    color: #4B3F2F; /* Softer brownish tone */
 }
 
-/* Kad i gdje */
-#kad-gdje {
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.5em;
-    padding: 20px 0 20px;
-}
-
-.kad-gdje-img {
-    max-width: 80%;  /* Adjust width to fit within content */
-    height: auto;  /* Maintain aspect ratio */
-    display: block;  /* Ensure it's centered */
-    margin: 20px auto;  /* Center the image with some spacing */
-    border-radius: 10px;  /* Optional: rounded corners */
-}
-
-/* RSVP Form */
-#rsvp {
-    padding: 0;
-}
-
+/* RSVP Form - Decrease Font Size */
 #rsvpForm {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    text-align: left; /* Aligns text properly */
+    font-size: 0.9em;
 }
-
-/* Labels */
 #rsvpForm label {
-    color: #465742;
-    font-size: 1em;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    transition: color 0.3s ease;
+    font-size: 0.9em;
+}
+#rsvpForm input, #rsvpForm textarea {
+    font-size: 0.9em;
 }
 
-/* Change label color when the user clicks inside input/textarea */
-#rsvpForm input:focus + label,
-#rsvpForm textarea:focus + label {
-    color: #808000; /* Light olive green */
-}
-
-/* Input Fields */
-#rsvpForm input[type="text"], 
-#rsvpForm input[type="number"],
-#rsvpForm textarea {
-    width: 95%;
-    padding: 10px;
-    border: 2px solid #0A3D62;
-    border-radius: 8px;
-    font-size: 1em;
-    margin-bottom: 15px;
-}
-
-/* Dodatne napomene field */
-#rsvpForm textarea {
-    resize: vertical; /* Allows users to resize only vertically */
-    min-height: 80px;
-}
-
-/* Radio Button Styling */
-.option-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.option-group input[type="radio"] {
-    display: none; /* Hide default radio button */
-}
-
-.option-group label {
-    background: #f4f4f4;
-    padding: 10px 20px;
-    border: 2px solid #0A3D62;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-    flex: 1;
-    text-align: center;
-}
-
-/* Selected State */
-.option-group input[type="radio"]:checked + label {
-    background: #A3C585;
-    color: white;
-}
-
-/* Submit Button */
-#rsvpForm input[type="submit"] {
-    background-color: #0A3D62;
-    color: white;
-    padding: 12px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 100%;
-}
-/* Style for the music toggle button */
+/* Music Button - Change to Icon Only */
 #toggleMusic {
     position: fixed;
-    bottom: 20px;   /* Position at the bottom of the screen */
-    left: 20px;     /* Position it to the left */
-    padding: 10px 20px;
-    background-color: #2E8B57; /* Green color for button */
-    color: white;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('speaker_icon.png') no-repeat center center;
+    background-size: contain;
     border: none;
-    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-}
-
-#toggleMusic:hover {
-    background-color: #3CB371; /* Darker green on hover */
+    padding: 0;
 }

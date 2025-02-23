@@ -35,7 +35,7 @@ body {
 
 /* Header */
 #naslov {
-    font-family: 'Ms Madi', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 4.5em;
     color: #C89A0A; /* Dark blue 465742 */
     margin: 20px auto;
@@ -58,13 +58,6 @@ body {
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
-}
-
-/* Kad i gdje */
-#kad-gdje {
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.5em;
-    padding: 20px 0 20px;
 }
 
 .kad-gdje-img {
@@ -171,16 +164,15 @@ body {
     font-family: 'Madelyn', cursive;
     font-size: 2.4em;
     line-height: auto;
-    max-width: 600px;
+    max-width: 500px;
     margin: 15px;
-    color: C2A70E;
 }
 
 #datum-potvrde {
     font-family: 'Madelyn', serif;
-    font-size: 1em;
-    line-height: 1.2;
-    max-width: 600px;
+    font-size: 1.2em;
+    line-height: auto;
+    max-width: 500px;
     margin: 15px auto;
 }
 /* Style for the music toggle button

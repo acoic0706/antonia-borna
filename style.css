@@ -147,6 +147,13 @@ body {
     color: white;
 }
 
+.option-group input[type="radio"]:focus + label {
+    outline: none; /* Removes default blue focus */
+    border-color: #808000; /* Light olive green */
+    background: #C7DBD1; /* Your selected state */
+    color: white;
+}
+
 /* Submit Button */
 #rsvpForm input[type="submit"] {
     background-color: #2463A5;

@@ -50,11 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Reset form after submission
         document.getElementById("rsvpForm").reset();
 
-        // Keep the confirmation message visible for 5 seconds
-        setTimeout(() => {
-            message.remove();
-        }, 5000);
-
+        // Keep the confirmation message visible for 5 seconds setTimeout(() => {   message.remove();   }, 5000);
+        
         // Prepare data object
         let formData = {
             ime_prezime: imePrezime,

@@ -46,7 +46,7 @@ body {
 
 .grad-img {/* display: block;Ensures it's on a new line */
     margin: 10px auto;    /* Centers the image */
-    max-width: 50%;       /* Makes sure it doesn’t overflow */
+    max-width: 80%;       /* Makes sure it doesn’t overflow */
     height: auto;         /* Keeps aspect ratio */
     border-radius: 10px;  /* Optional: adds rounded corners */
 }

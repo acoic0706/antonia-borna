@@ -150,13 +150,13 @@ body {
 
 /* Selected State */
 .option-group input[type="radio"]:checked + label {
-    background: #BBD8EC;
+    background: #C7DBD1;
     color: white;
 }
 
 /* Submit Button */
 #rsvpForm input[type="submit"] {
-    background-color: #C7DBD1;
+    background-color: #261C95;
     color: white;
     padding: 10px;
     font-size: 1em;
@@ -168,7 +168,7 @@ body {
 }
 
 #kraj {
-    font-family: 'Madelyn', serif;
+    font-family: 'Madelyn', cursive;
     font-size: 1.8em;
     line-height: 1.6;
     max-width: 600px;
@@ -177,11 +177,11 @@ body {
 }
 
 #datum-potvrde {
-    font-family: 'Madelyn', cursive;
-    font-size: 2em;
+    font-family: 'Madelyn', serif;
+    font-size: 1.6em;
     line-height: 1.6;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 5px auto;
     color: C2A70E;
 }
 /* Style for the music toggle button

@@ -172,14 +172,14 @@ body {
     font-size: 2.4em;
     line-height: auto;
     max-width: 600px;
-    margin: 15px auto;
+    margin: 15px;
     color: C2A70E;
 }
 
 #datum-potvrde {
     font-family: 'Madelyn', serif;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.2;
     max-width: 600px;
     margin: 15px auto;
 }

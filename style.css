@@ -156,7 +156,7 @@ body {
 
 /* Submit Button */
 #rsvpForm input[type="submit"] {
-    background-color: #261C95;
+    background-color: #2463A5;
     color: white;
     padding: 10px;
     font-size: 1em;
@@ -169,7 +169,7 @@ body {
 
 #kraj {
     font-family: 'Madelyn', cursive;
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
@@ -178,11 +178,10 @@ body {
 
 #datum-potvrde {
     font-family: 'Madelyn', serif;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 1.6;
     max-width: 600px;
-    margin: 5px auto;
-    color: C2A70E;
+    margin: 10px auto;
 }
 /* Style for the music toggle button
 #toggleMusic {

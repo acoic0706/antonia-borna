@@ -150,7 +150,7 @@ body {
 
 /* Selected State */
 .option-group input[type="radio"]:checked + label {
-    background: #A3C585;
+    background: #BBD8EC;
     color: white;
 }
 

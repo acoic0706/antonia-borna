@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat; /* Prevents repeating */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /*Keeps background fixed while scrolling */
-    color: #C89A0A; /* Dark green text 465742 */
+    color: #465742; /* Dark green text  */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -35,9 +35,9 @@ body {
 
 /* Header */
 #naslov {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Ms Madi', cursive;
     font-size: 4.5em;
-    color: #C89A0A; /* Dark blue 465742 */
+    color: #465742; /* Dark blue 465742 */
     margin: 20px auto;
     padding: 10px;
     text-align: center;
@@ -53,7 +53,7 @@ body {
 
 /* Invitation Info */
 #info {
-    font-family: 'Ms Madi', cursive;
+    font-family: 'Dancing script', cursive;
     font-size: 1.8em;
     line-height: 1.6;
     max-width: 600px;

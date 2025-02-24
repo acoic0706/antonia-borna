@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat; /* Prevents repeating */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /*Keeps background fixed while scrolling */
-    color: #1D40B7; /* Dark green text 465742 */
+    color: #465742; /* Dark green text 1D40B7 */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ body {
 #naslov {
     font-family: 'Ms Madi', cursive;
     font-size: 4.5em;
-    color: #1D40B7; /* Dark blue 465742 */
+    color: #465742; /* Dark green text 1D40B7 */
     margin: 20px auto;
     padding: 10px;
     text-align: center;

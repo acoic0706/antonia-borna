@@ -41,6 +41,30 @@ body {
     border-radius: 10px;
 }
 
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    body {
+        /* Ensure the body takes up the full viewport height */
+        height: 100vh;
+        /* Remove the initial margin-top for mobile */
+        margin-top: 0;
+    }
+    #naslov {
+        /* Flexbox to center the header */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Ensure the header takes up the full viewport height */
+        height: 100vh;
+        /* Reset the top margin */
+        margin-top: 0;
+    }
+    /*optional fix for background glitch*/
+    body {
+        background-attachment: scroll;
+    }
+}
+
 /* Invitation Info */
 #info {
     font-family: 'Dancing script', cursive;

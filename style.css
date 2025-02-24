@@ -15,18 +15,24 @@ body {
 #naslov {
     font-family: 'Ms Madi', cursive;
     font-size: 4.5em;
-    color: #465742; /* Dark green text 1D40B7 */
-    margin-top: 55px auto;
-    padding: 10px;
+    color: #465742; /* Dark green text 1D40B7 padding: 10px;*/
     text-align: center;
     max-width: 90%;
+
+    /* Centering header vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove margins */
 }
 
-.grad-img {/* display: block;Ensures it's on a new line */
-    margin: 10px auto;    /* Centers the image */
-    max-width: 85%;       /* Makes sure it doesn’t overflow */
-    height: auto;         /* Keeps aspect ratio */
-    border-radius: 10px;  /* Optional: adds rounded corners */
+/* Add space between header and next section */
+.grad-img {
+    margin-top: 50px; /* Creates space below header */
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Invitation Info */

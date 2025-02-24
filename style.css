@@ -3,12 +3,17 @@ body {
     background-image: url("background.png"); /* Path to your image */
     background-size: cover; /* Makes the image cover the whole page */
     background-repeat: no-repeat; /* Prevents repeating */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /*Keeps background fixed while scrolling */
+    background-position: center; /* Centers the image background-attachment: fixed; Keeps background fixed while scrolling */
     color: #465742; /* Dark green text 1D40B7 */
     text-align: center;
-    margin: 0;
-    padding: 0;
+}
+
+/* Alternative Fix for Mobile */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Ensures smoother scrolling */
+        background-position: center top; /* Adjust position to avoid jumping */
+    }
 }
 
 /* Header */
@@ -29,7 +34,6 @@ body {
 
 /* Add space between header and next section */
 .grad-img {
-    margin-top: 50px; /* Creates space below header */
     max-width: 85%;
     height: auto;
     border-radius: 10px;

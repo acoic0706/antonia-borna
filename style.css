@@ -11,14 +11,14 @@ body {
     padding: 0;
 }
 
-/* Alternative Fix for Mobile */
+/* Alternative Fix for Mobile 
 @media (max-width: 768px) {
     body {
-        background-attachment: fixed; /* Ensures smoother scrolling */
+        background-attachment: fixed; /* Ensures smoother scrolling
         background-size: cover;
-        background-position: center; /* Adjust position to avoid jumping */
+        background-position: center; /* Adjust position to avoid jumping
     }
-}
+}*/ 
 
 /* Header */
 #naslov {

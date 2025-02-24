@@ -30,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove margins */
+    margin: -30px; /* Remove margins */
 }
 
 /* Add space between header and next section */

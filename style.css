@@ -38,15 +38,15 @@ body {
     font-family: 'Ms Madi', cursive;
     font-size: 4.5em;
     color: #465742; /* Dark green text 1D40B7 */
-    margin: 20px auto;
+    margin: 15px auto;
     padding: 10px;
     text-align: center;
     max-width: 90%;
 }
 
 .grad-img {/* display: block;Ensures it's on a new line */
-    margin: 10px auto;    /* Centers the image */
-    max-width: 80%;       /* Makes sure it doesn’t overflow */
+    margin: 5px auto;    /* Centers the image */
+    max-width: 90%;       /* Makes sure it doesn’t overflow */
     height: auto;         /* Keeps aspect ratio */
     border-radius: 10px;  /* Optional: adds rounded corners */
 }

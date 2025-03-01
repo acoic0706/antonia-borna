@@ -8,6 +8,14 @@ body {
     text-align: center;
 }
 
+section {
+    width: 100%;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically if needed */
+}
+
 /* Header */
 #naslov {
     font-family: 'Ms Madi', cursive;
@@ -16,10 +24,6 @@ body {
     max-width: 90%;
     padding-top: 50px;
 }
-    /* Centering header vertically  display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height  margin-top: -30px; */
    
 /* Add space between header and next section */
 .grad-img {
@@ -106,10 +110,6 @@ body {
     margin-bottom: 15px;
 }
 
-.option-group input[type="radio"] {
-    display: none; /* Hide default radio button */
-}
-
 .option-group label {
     background: #f4f4f4;
     padding: 10px 20px;
@@ -119,19 +119,6 @@ body {
     transition: background 0.3s, color 0.3s;
     flex: 1;
     text-align: center;
-}
-
-/* Selected State */
-.option-group input[type="radio"]:checked + label {
-    background: #C7DBD1;
-    color: white;
-}
-
-.option-group input[type="radio"]:focus + label {
-    outline: none; /* Removes default blue focus */
-    border-color: #808000; /* Light olive green */
-    background: #C7DBD1; /* Your selected state */
-    color: white;
 }
 
 /* Submit Button */
@@ -162,20 +149,3 @@ body {
     max-width: 90%;
     margin: 10px auto;
 }
-/* Style for the music toggle button
-#toggleMusic {
-    position: fixed;
-    bottom: 20px;   Position at the bottom of the screen
-    left: 20px;     Position it to the left
-    padding: 10px 20px;
-    background-color: #2E8B57; Green color for button
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#toggleMusic:hover {
-    background-color: #3CB371; Darker green on hover 
-}*/

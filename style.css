@@ -5,9 +5,8 @@ body {
     background-repeat: no-repeat; /* Prevents repeating */
     background-position: top center; /* Centers the image background-attachment: fixed; Keeps background fixed while scrolling */
     background-attachment: fixed; /* fixed */
-    color: #465742; /* Dark green text 1D40B7 margin: 0;*/
+    color: #465742; /* Dark green text 1D40B7 margin: 0;margin-top: 80px;*/
     text-align: center;
-    margin-top: 80px;
 }
 /* Alternative Fix for Mobile 
 @media (max-width: 768px) {
@@ -40,6 +39,13 @@ body {
     height: auto;
     border-radius: 10px;
     padding-top: 20px;
+}
+
+#stih {
+    font-family: 'Dancing script', cursive;
+    font-size: 1.2em;
+    line-height: 1.4;
+    max-width: 500px;
 }
 
 /* Invitation Info */

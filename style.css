@@ -9,14 +9,6 @@ body {
     text-align: center;
     margin-top: 80px;
 }
-/* Alternative Fix for Mobile 
-@media (max-width: 768px) {
-    body {
-        background-attachment: fixed; /* Ensures smoother scrolling
-        background-size: contain;
-        background-position: top center; /* Adjust position to avoid jumping
-    }
-} */
 
 /* Header */
 #naslov {
@@ -40,13 +32,6 @@ body {
     height: auto;
     border-radius: 10px;
     padding-top: 20px;
-}
-
-#stih {
-    font-family: 'Dancing script', cursive;
-    font-size: 1.2em;
-    line-height: 1.4;
-    max-width: 500px;
 }
 
 /* Invitation Info */

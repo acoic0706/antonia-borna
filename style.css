@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    background-image: url("background.png"); /* Path to your image */
-    background-size: cover; /* Makes the image cover the whole page */
-    background-repeat: no-repeat; /* Prevents repeating */
-    background-position: center; /* Centers the image background-attachment: fixed; Keeps background fixed while scrolling */
-    background-attachment: fixed; /* fixed */
-    color: #465742; /* Dark green text 1D40B7 margin: 0;margin-top: 80px;*/
+    background-image: url("background.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #465742;
     text-align: center;
     margin-top: 80px;
 }

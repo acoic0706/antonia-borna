@@ -4,7 +4,7 @@ body {
     background-size: cover; /* Makes the image cover the whole page */
     background-repeat: no-repeat; /* Prevents repeating */
     background-position: top center; /* Centers the image background-attachment: fixed; Keeps background fixed while scrolling */
-    background-attachment: fixed;
+    background-attachment: local; /* fixed */
     color: #465742; /* Dark green text 1D40B7 margin: 0;*/
     text-align: center;
     margin-top: 80px;

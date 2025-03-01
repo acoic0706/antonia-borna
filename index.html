@@ -5,33 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pozivnica za vjenčanje</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Merriweather:wght@300;400&family=Ms+Madi&display=swap" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Merriweather:wght@300;400&family=Ms+Madi&display=swap" rel="stylesheet">    
 </head>
 <body>
-
-
-<!-- Lemon image at top-left corner -->
-<img id="lemonTopLeft" src="olive.png" alt="Lemon">
-
-<!-- Lemon image at top-right corner -->
-<img id="lemonTopRight" src="olive.png" alt="Lemon">
-
-<!-- Lemon image at bottom-left corner -->
+<!-- Lemon image at top-left corner <img id="lemonTopLeft" src="olive.png" alt="Lemon" <img id="lemonTopRight" src="olive.png" alt="Lemon">
+>
+<img id="lemonBottomRight" src="olive.png" alt="Lemon">-
 <img id="lemonBottomLeft" src="olive.png" alt="Lemon">
-
 <!-- Lemon image at bottom-right corner -->
-<img id="lemonBottomRight" src="olive.png" alt="Lemon">
 
-<header>
-<p>Antonia & Borna</p>
-<img src="grafika.jpg" alt="Wedding Image" class="header-image">
-</header>
+<section id="naslov">
+<p>Antonia<br>
+&<br>
+Borna</p>
+</section>
+
+<section id="grad">
+    <img src="grafika.jpg" alt="Wedding Image" class="grad-img">
+</section>
 
 <section id="info">
 <p>Dragi naši,<br>
 s radošću vas<br>
 pozivamo na naše vjenčanje</p>
-<p class="datum">31.5.2025.</p>
+<p class="datum">31. 5. 2025.</p>
 <p> u Dubrovniku. </p>
 </section>
 
@@ -43,11 +40,11 @@ pozivamo na naše vjenčanje</p>
 <h3>Potvrdite svoj dolazak</h3>
 <form id="rsvpForm">
 <!-- Ime i Prezime (Now one field) -->
-<label for="ime_prezime">Ime i prezime:</label>
+<label for="ime_prezime">Ime i prezime uzvanika:</label>
 <input type="text" id="ime_prezime" name="ime_prezime" required>
 
 <!-- Dolazak Options -->
-<label>Dolazak:</label>
+<label>Potvrda dolaska:</label>
 <div class="option-group">
 <input type="radio" id="dolazim" name="dolazak" value="da" required>
 <label for="dolazim">Dolazim</label>
@@ -79,14 +76,13 @@ pozivamo na naše vjenčanje</p>
 </form>
 </section>
 
-<!-- Audio Element (hidden by default) -->
-<audio id="backgroundMusic" loop>
+<!-- Audio Element (hidden by default) 
+    <audio id="backgroundMusic" loop>
     <source src="background.m4a" type="audio/m4a">
     Your browser does not support the audio element.
-</audio>
+</audio>-->
 
-<!-- Toggle Button for Music -->
-<button id="toggleMusic">Turn Music On</button>
+<!-- Toggle Button for Music <button id="toggleMusic">Turn Music On</button> -->
 
 <div id="confirmationMessage" style="display:none;">
     <p>Thank you for submitting your form! We are processing your data...</p>
@@ -96,9 +92,18 @@ pozivamo na naše vjenčanje</p>
     <p>Loading...</p> <!-- You can replace this with a spinner icon -->
 </div>
 
+<section id="datum-potvrde"
+<p>Molimo potvrditi dolazak najkasnije do 10. 4. 2025.</p>
+</section>
+
+<section id="kraj">
+<p>Veselimo se vašem dolasku!</p>
+</section>
+
 <footer>
-<p>Kontakt: antonia.coic@gmail.com 095/821-5046</p>
-<p> borna.zrinscak@gmail.com 095/821-5046</p>
+<p>Kontakti: </p>
+<p>Antonia 095/821-5046</p>
+<p>Borna 098/966-3953</p>
 </footer>
 
 <script src="script.js"></script>

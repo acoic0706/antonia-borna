@@ -1,12 +1,12 @@
 /* General Styles */
 body {
-    background-image: url("background.jpg"); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-attachment: fixed; 
-    color: #465742;
-    text-align: center;
+    background-image: url("background.jpg") !important; 
+    background-size: cover !important; 
+    background-repeat: no-repeat !important; 
+    background-position: center !important; 
+    background-attachment: fixed !important; 
+    color: #465742 !important;
+    text-align: center !important;
 }
 
 /* Header */

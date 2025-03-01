@@ -1,20 +1,18 @@
-/* General Styles */
+/* General Styles background-attachment: fixed;  */
 body {
-    background-image: url("background.jpg") !important; 
-    background-size: cover !important; 
-    background-repeat: no-repeat !important; 
-    background-position: center !important; 
-    background-attachment: fixed !important; 
-    color: #465742 !important;
-    text-align: center !important;
+    background-image: url("background.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: #465742;
+    text-align: center;
 }
 
 /* Header */
 #naslov {
     font-family: 'Ms Madi', cursive;
     font-size: 4.5em;
-    color: #465742; /* Dark green text 1D40B7 padding: 10px;*/
-    text-align: center;
+    color: #465742; /* Dark green text 1D40B7 padding: 10px; text-align: center; */
     max-width: 90%;
     padding-top: 50px;
 }

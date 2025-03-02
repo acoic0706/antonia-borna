@@ -23,7 +23,6 @@ body {
     font-family: 'Ms Madi', cursive;
     font-size: 4.5em;
     color: #465742; /* Dark green text 1D40B7 padding: 10px;*/
-    max-width: 90%;
     padding-top: 50px;
     margin-top: 0;
 }
@@ -39,7 +38,6 @@ body {
     height: auto;
     border-radius: 10px;
     padding-top: 50px;
-    display: block;
 }
 
 #stih {

@@ -178,6 +178,13 @@ body {
     margin: 15px;
 }
 
+.initials-img {
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
 #datum-potvrde {
     font-family: 'Madelyn', serif;
     font-size: 1.2em;

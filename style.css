@@ -43,6 +43,14 @@ body {
     padding-top: 20px;
 }
 
+#stih {
+    font-family: 'Dancing script', cursive;
+    font-size: 1.2em;
+    line-height: 1.4;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 /* Invitation Info */
 #info {
     font-family: 'Dancing script', cursive;
